@@ -1,40 +1,34 @@
 # Election_Analysis
 Module 3 - Python - Election Analysis
-## Project Overview
-A Colorado Board of Educations employees has given the following tasks to complete the election audit of a recent local congressional elections.
-1.Calculate the total # of votes cast
-2.Get a complete list of candidates who received votes
-3.Calculate the total # of votes each candidate received
-4.Calculate the % of votes each candidate won
-5.Determinte the winner of the election based on popular vote
+## Overview of Election Audit
+A Colorado Board of Educations employees has given the  task of completing the election audit of a recent local congressional elections. They need to see the total votes for each candidate and county, list of candidates who received votes, which candidate won and percentage for each candidate and county and the winner of the election and largest county turnout.
 ## Resources
 -Data Source: election_results.csv
 -Softaware: Phython 3.7 VS code 1.62.3
-## Summary
+## Election-Audit Results
 The analysis of the election show that:
-- There were "x" votes cast in the election
-- The candidates were:
-  - Candidate 1
-  - Candidate 2
-  - Candidate 3
-- The candidate results were:
-  - Candidate 1 received "x%" of the vote and "y" number of votes
-  - Candidate 2 received "x%" of the vote and "y" number of votes
-  - Candidate 3 received "x%" of the vote and "y" number of votes
+- There were 369,711 votes cast in the election
+- There were 3 counties in the election and they were: Jefferson, Denver and Arapahoe
+- The county resulst in terms of breakdown of the # of votes and the percentage of total votes for each county:
+  - Jefferson received 10.5% of the vote and 38,855 votes
+  - Denver received 82.8% of the vote and 306,055 votes
+  - Arapahoe received 6.7% of the vote and 24,801 votes
+- Largest county turnout was in Denver
+- The candidate results are listed below. The candidates who participated to elections were Charles Casper Stockham, Diana DeGett and Raymon Anthony Doane
+  - Charles Casper Stockham received "23%" of the vote and "85,213" number of votes
+  - Diana DeGett received "73.8%" of the vote and "272,892" number of votes
+  - Raymon Anthony Doane received "3.1%" of the vote and "11,606" number of votes
 - The winner of the election was:
-  - Candidate (1,2,3) who received "x%" of the vote and "y" number of votes
-## Challenge Overview
-- Read the file object with the reader function
-- Open the data file
-- Write down the names of all the candidates
-- Add a vote count for each candidate
-- Get the total votes for each candidate
-- Get the total votes cast for the election
-- Using the open() function with the "w" mode we will write data to the file
-- Determine the percentage of votes for each candidate by looping through the counts
-- Determine if the votes are greater than the winning count
-- If true then set winning_count = votes and winning_percent = vote_percentage
-- Save the winning candidate's name to the text file
-- print out each candidate's name, vote count, and percentage of votes 
-- Save the results to our text file
+  - Candidate Diana DeGette who received "73.8%" of the vote and "272,892" number of votes
+  The following images show the result of the elections printed on the screen and writtine into a text file.
+  
+![This image shows the result of the election written into text file](Resources/electionResults_textfile_output.PNG)
+
+![This image shows the result of the election on the screen](Resources/electionResults_commandline_output.PNG)
+
+## Election-Audit Summary
+My proposal to the election committee is as follows.
+Election data source name is hard coded in this script as "election_results.csv". The user can be asked to provide the data file name and that the code should be modified to accept the user entered data file and location. 
+In the script two loops are used to iterate once for the candidate data and once for the county data. Candidate data is read from column 3 and county data in column 2 and these are hard coded in the main section. To reduce repetitions he script can be modified to call a function to receive which data whether candidate or county to be iterated and returns the result. This would speed up the run time, shorten the code, allow us to write quality code. 
+
  
